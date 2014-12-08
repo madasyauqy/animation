@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="sprite.css">
+	<script type="text/javascript" src="jq1.js"></script>
+</head>
+<body>
+	<div class="satu"></div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var awal = 14;
+		
+		setInterval(function (){
+			$('.satu').removeClass('sprite'+awal);
+			if (awal >= 27) {
+				awal = 14;
+			}else{
+				awal = awal;
+			}
+			awal+=1;
+			$('.satu').addClass('sprite'+awal);
+		},100);
+	});
+</script>
+</html>
